@@ -1,6 +1,24 @@
-let x=[1,2,3,4,5,6]
-function reverse(x){
-    for(let i= x.length-1; i>=0; i--)
-        console.log(x[i]);
+let x = 'ABCDCBA';
+
+
+function palindrome (a){
+    let lastone=a.length-1;
+    for(let i =0; i<a.length/2; ++i){
+       fristone = a[i]
+       y= a[lastone-i]
+    if(fristone === y){
+        
+       return true;
+    } else{
+        return false
     }
-    reverse(x)
+   
+} 
+}
+console.log(palindrome(x));
+
+
+
+
+
+
