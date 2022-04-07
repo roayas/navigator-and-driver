@@ -25,22 +25,23 @@ let y =[8,3,5,9,3,2];
 function sort(arry){ 
     
     for(i=0; i<arry.length;++i){
-        for(z=1;z<arry.length;i++){  //nasted loop to comper every elemnt to the rest of arry stared with second one
-    if (arry[i]>arry[z]){
-        min=arry[z];
-        arry[z]=arry[i]   //swap the min numder to the index 0
-        arry[i]=min      //store 
+        for(z=i+1;z<arry.length;z++){ //nasted loop to comper every elemnt to the rest of arry stared with second one
+            let min;
+    if (arry[i]<arry[z]){
+        min=arry[i];
+        arry[i]=arry[z]  //swap the min numder to the index 0
+        arry[z]=min      //store 
     }
-}
 }
 document.getElementById('task2').innerHTML= arry
     return arry
+}
+
 } 
     
 console.log(sort(y));
   
     
-
 
 
 
